@@ -5,7 +5,7 @@
     "require": {
         "php": "^8.2",
         "guzzlehttp/guzzle": "^7.2",
-        "laravel/framework": "11.54.0",
+        "laravel/framework": "^11.0",
         "laravel/sanctum": "^4.0",
         "laravel/tinker": "^2.9"
     },
@@ -45,12 +45,13 @@
         "allow-plugins": {
             "pestphp/pest-plugin": true,
             "php-http/discovery": true
-        },
-        "audit": {
-            "abandoned": "ignore"
         }
     },
     "minimum-stability": "stable",
-    "ignore-platform-reqs": true,
-    "prefer-stable": true
+    "prefer-stable": true,
+    "policy": {
+        "advisories": {
+            "block": false
+        }
+    }
 }
